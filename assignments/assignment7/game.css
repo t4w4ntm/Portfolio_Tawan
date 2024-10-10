@@ -1,0 +1,74 @@
+/* ตกแต่ง container และ layer */
+#container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#layer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden; /* เพื่อป้องกันไม่ให้กล่องออกนอกขอบ */
+}
+
+/* สี่เหลี่ยม */
+.square {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* สีที่ใช้ */
+.maroon {
+    background-color: maroon; 
+}
+
+.lightgreen {
+    background-color: lightgreen; 
+}
+
+.magenta {
+    background-color: magenta; 
+}
+
+/* เอฟเฟกต์เมื่อ hover */
+.square:hover {
+    transform: scale(1.2);
+}
+
+/* ปุ่มและ input */
+button, input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#timerClock {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
